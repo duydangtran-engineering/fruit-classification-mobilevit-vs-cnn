@@ -1,0 +1,11 @@
+tensorflow>=2.16
+keras>=3.0
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+pillow
+kagglehub
+ipykernel

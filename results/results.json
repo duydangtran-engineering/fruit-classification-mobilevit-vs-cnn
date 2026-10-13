@@ -1,0 +1,191 @@
+{
+  "class_names": [
+    "Apple Pink Lady",
+    "Apple Red",
+    "Apple Red Delicious",
+    "Cabbage white",
+    "Cactus fruit",
+    "Caju seed",
+    "Carambola",
+    "Cherry Sour",
+    "Grape Blue",
+    "Grape White",
+    "Grapefruit White",
+    "Huckleberry",
+    "Lychee",
+    "Physalis",
+    "Zucchini"
+  ],
+  "img_size": [
+    128,
+    128
+  ],
+  "mobilevit_variant": "xxs",
+  "summary": {
+    "CNN tự xây": {
+      "Accuracy Test (%)": 100.0,
+      "Macro-F1 Test (%)": 100.0,
+      "Số tham số (triệu)": 3.3066,
+      "Dung lượng float32 (MB)": 13.2263,
+      "GFLOPs / ảnh": 0.2866,
+      "Thời gian train (s/epoch)": 4.1676,
+      "CPU — 1 ảnh (ms)": 347.1304,
+      "Acc. TB khi ảnh bị biến đổi (%)": 84.1425,
+      "Acc. TB khi đổi nền (%)": 95.335,
+      "GPU — 1 ảnh (ms)": 1.3695,
+      "Acc. khi chỉ có 2% dữ liệu (%)": 96.2138,
+      "Acc. ảnh ngoài đời thật (%)": 25.0
+    },
+    "MobileViT-XXS": {
+      "Accuracy Test (%)": 100.0,
+      "Macro-F1 Test (%)": 100.0,
+      "Số tham số (triệu)": 0.96,
+      "Dung lượng float32 (MB)": 3.8398,
+      "GFLOPs / ảnh": 0.1742,
+      "Thời gian train (s/epoch)": 8.1551,
+      "CPU — 1 ảnh (ms)": 135.8548,
+      "Acc. TB khi ảnh bị biến đổi (%)": 70.6163,
+      "Acc. TB khi đổi nền (%)": 78.97,
+      "GPU — 1 ảnh (ms)": 12.485,
+      "Acc. khi chỉ có 2% dữ liệu (%)": 95.9076,
+      "Acc. ảnh ngoài đời thật (%)": 25.0
+    }
+  },
+  "mcnemar": {
+    "cnn_only_correct": 0,
+    "mvit_only_correct": 0,
+    "p_value": 1.0
+  },
+  "robustness": {
+    "CNN tự xây": {
+      "Gốc (không đổi)": 100.0,
+      "Nhiễu Gauss (σ=25)": 95.57,
+      "Làm mờ (σ=2)": 99.55,
+      "Tối đi 50%": 62.61,
+      "Giảm tương phản": 25.75,
+      "Xoay 45°": 99.3,
+      "Che 48×48 px": 99.69,
+      "Nền màu ngẫu nhiên": 91.34,
+      "Nền hoa văn ngẫu nhiên": 99.33
+    },
+    "MobileViT-XXS": {
+      "Gốc (không đổi)": 100.0,
+      "Nhiễu Gauss (σ=25)": 56.46,
+      "Làm mờ (σ=2)": 99.75,
+      "Tối đi 50%": 21.77,
+      "Giảm tương phản": 29.68,
+      "Xoay 45°": 100.0,
+      "Che 48×48 px": 99.33,
+      "Nền màu ngẫu nhiên": 66.12,
+      "Nền hoa văn ngẫu nhiên": 91.82
+    }
+  },
+  "data_efficiency": [
+    {
+      "Mô hình": "CNN tự xây",
+      "Tỷ lệ dữ liệu": 1.0,
+      "Số ảnh train": 8583,
+      "Lần": 0,
+      "Accuracy": 1.0,
+      "Macro-F1": 1.0
+    },
+    {
+      "Mô hình": "MobileViT-XXS",
+      "Tỷ lệ dữ liệu": 1.0,
+      "Số ảnh train": 8583,
+      "Lần": 0,
+      "Accuracy": 1.0,
+      "Macro-F1": 1.0
+    },
+    {
+      "Mô hình": "CNN tự xây",
+      "Tỷ lệ dữ liệu": 0.02,
+      "Số ảnh train": 172,
+      "Lần": 0,
+      "Accuracy": 0.9621380846325167,
+      "Macro-F1": 0.9355536753804508
+    },
+    {
+      "Mô hình": "MobileViT-XXS",
+      "Tỷ lệ dữ liệu": 0.02,
+      "Số ảnh train": 172,
+      "Lần": 0,
+      "Accuracy": 0.9590757238307349,
+      "Macro-F1": 0.9030612307962947
+    },
+    {
+      "Mô hình": "CNN tự xây",
+      "Tỷ lệ dữ liệu": 0.05,
+      "Số ảnh train": 429,
+      "Lần": 0,
+      "Accuracy": 0.9933184855233853,
+      "Macro-F1": 0.9927054758802893
+    },
+    {
+      "Mô hình": "MobileViT-XXS",
+      "Tỷ lệ dữ liệu": 0.05,
+      "Số ảnh train": 429,
+      "Lần": 0,
+      "Accuracy": 0.9922048997772829,
+      "Macro-F1": 0.9931324525139356
+    },
+    {
+      "Mô hình": "CNN tự xây",
+      "Tỷ lệ dữ liệu": 0.1,
+      "Số ảnh train": 858,
+      "Lần": 0,
+      "Accuracy": 1.0,
+      "Macro-F1": 1.0
+    },
+    {
+      "Mô hình": "MobileViT-XXS",
+      "Tỷ lệ dữ liệu": 0.1,
+      "Số ảnh train": 858,
+      "Lần": 0,
+      "Accuracy": 0.9977728285077951,
+      "Macro-F1": 0.9976204218613944
+    },
+    {
+      "Mô hình": "CNN tự xây",
+      "Tỷ lệ dữ liệu": 0.25,
+      "Số ảnh train": 2146,
+      "Lần": 0,
+      "Accuracy": 1.0,
+      "Macro-F1": 1.0
+    },
+    {
+      "Mô hình": "MobileViT-XXS",
+      "Tỷ lệ dữ liệu": 0.25,
+      "Số ảnh train": 2146,
+      "Lần": 0,
+      "Accuracy": 0.9958240534521158,
+      "Macro-F1": 0.9963301335549787
+    }
+  ],
+  "train_info": {
+    "CNN tự xây": {
+      "train_time_s": 139.88955658399937,
+      "epochs_run": 30,
+      "best_epoch": 24,
+      "epoch_time_s": 4.1676437240003
+    },
+    "MobileViT-XXS": {
+      "train_time_s": 382.5182553169998,
+      "epochs_run": 30,
+      "best_epoch": 27,
+      "epoch_time_s": 8.155125629000395
+    }
+  },
+  "notes": [
+    "**Độ chính xác trên Test sạch:** CNN tự xây 100.00% — MobileViT-XXS 100.00% (chênh 0.00 điểm). Chênh lệch **không có ý nghĩa thống kê** — chưa đủ bằng chứng để nói mô hình nào chính xác hơn (McNemar p = 1). Cả 2 đều > 97%: bộ Fruits-360 sạch quá dễ nên accuracy gần như bão hoà, cần các tiêu chí khác để phân biệt.",
+    "**Kích thước:** MobileViT-XXS có 0.96M tham số, ít hơn 3.4 lần so với CNN tự xây (3.31M — phần lớn nằm ở lớp Dense sau Flatten).",
+    "**Số phép tính:** CNN tự xây 0.287 GFLOPs/ảnh, MobileViT-XXS 0.174 GFLOPs/ảnh ⇒ MobileViT-XXS ít hơn 1.6 lần.",
+    "**Tốc độ suy luận (GPU — 1 ảnh (ms)):** CNN tự xây 1.37 ms — MobileViT-XXS 12.48 ms ⇒ CNN tự xây nhanh hơn. Ít FLOPs hơn nhưng không nhanh hơn ⇒ tốc độ thực tế còn phụ thuộc số lớp, phép reshape/attention, chứ không chỉ số phép nhân.",
+    "**Thời gian huấn luyện:** CNN tự xây 4.2 s/epoch — MobileViT-XXS 8.2 s/epoch.",
+    "**Acc. TB khi ảnh bị biến đổi:** CNN tự xây 84.1% — MobileViT-XXS 70.6% ⇒ CNN tự xây bền hơn.",
+    "**Acc. TB khi đổi nền:** CNN tự xây 95.3% — MobileViT-XXS 79.0% ⇒ CNN tự xây bền hơn.",
+    "**Biến đổi gây hại nhiều nhất:** CNN tự xây: 'Giảm tương phản' (25.8%); MobileViT-XXS: 'Tối đi 50%' (21.8%).",
+    "**Acc. khi chỉ có 2% dữ liệu:** CNN tự xây 96.2% — MobileViT-XXS 95.9% ⇒ tương đương.",
+    "**Ảnh ngoài đời thật:** CNN tự xây 25.0% — MobileViT-XXS 25.0% (trên 24 ảnh — ít ảnh nên chỉ mang tính tham khảo)."
+  ]
+}

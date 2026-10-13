@@ -1,0 +1,13 @@
+﻿,CNN tự xây,MobileViT-XXS
+Accuracy Test (%),100.0,100.0
+Macro-F1 Test (%),100.0,100.0
+Số tham số (triệu),3.3066,0.96
+Dung lượng float32 (MB),13.2263,3.8398
+GFLOPs / ảnh,0.2866,0.1742
+Thời gian train (s/epoch),4.1676,8.1551
+CPU — 1 ảnh (ms),347.1304,135.8548
+Acc. TB khi ảnh bị biến đổi (%),84.14249999999998,70.61625000000001
+Acc. TB khi đổi nền (%),95.335,78.97
+GPU — 1 ảnh (ms),1.3695,12.485
+Acc. khi chỉ có 2% dữ liệu (%),96.21380846325167,95.90757238307349
+Acc. ảnh ngoài đời thật (%),25.0,25.0
