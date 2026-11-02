@@ -29,12 +29,12 @@
       "Dung lượng float32 (MB)": 13.2263,
       "GFLOPs / ảnh": 0.2866,
       "Thời gian train (s/epoch)": 4.1676,
-      "CPU — 1 ảnh (ms)": 347.1304,
+      "CPU — 1 ảnh (ms)": 323.3112,
       "Acc. TB khi ảnh bị biến đổi (%)": 84.1425,
       "Acc. TB khi đổi nền (%)": 95.335,
-      "GPU — 1 ảnh (ms)": 1.3695,
+      "GPU — 1 ảnh (ms)": 0.9058,
       "Acc. khi chỉ có 2% dữ liệu (%)": 96.2138,
-      "Acc. ảnh ngoài đời thật (%)": 25.0
+      "Acc. ảnh ngoài đời thật (%)": 5.7471
     },
     "MobileViT-XXS": {
       "Accuracy Test (%)": 100.0,
@@ -43,12 +43,12 @@
       "Dung lượng float32 (MB)": 3.8398,
       "GFLOPs / ảnh": 0.1742,
       "Thời gian train (s/epoch)": 8.1551,
-      "CPU — 1 ảnh (ms)": 135.8548,
+      "CPU — 1 ảnh (ms)": 128.0815,
       "Acc. TB khi ảnh bị biến đổi (%)": 70.6163,
       "Acc. TB khi đổi nền (%)": 78.97,
-      "GPU — 1 ảnh (ms)": 12.485,
+      "GPU — 1 ảnh (ms)": 9.6598,
       "Acc. khi chỉ có 2% dữ liệu (%)": 95.9076,
-      "Acc. ảnh ngoài đời thật (%)": 25.0
+      "Acc. ảnh ngoài đời thật (%)": 13.7931
     }
   },
   "mcnemar": {
@@ -180,12 +180,12 @@
     "**Độ chính xác trên Test sạch:** CNN tự xây 100.00% — MobileViT-XXS 100.00% (chênh 0.00 điểm). Chênh lệch **không có ý nghĩa thống kê** — chưa đủ bằng chứng để nói mô hình nào chính xác hơn (McNemar p = 1). Cả 2 đều > 97%: bộ Fruits-360 sạch quá dễ nên accuracy gần như bão hoà, cần các tiêu chí khác để phân biệt.",
     "**Kích thước:** MobileViT-XXS có 0.96M tham số, ít hơn 3.4 lần so với CNN tự xây (3.31M — phần lớn nằm ở lớp Dense sau Flatten).",
     "**Số phép tính:** CNN tự xây 0.287 GFLOPs/ảnh, MobileViT-XXS 0.174 GFLOPs/ảnh ⇒ MobileViT-XXS ít hơn 1.6 lần.",
-    "**Tốc độ suy luận (GPU — 1 ảnh (ms)):** CNN tự xây 1.37 ms — MobileViT-XXS 12.48 ms ⇒ CNN tự xây nhanh hơn. Ít FLOPs hơn nhưng không nhanh hơn ⇒ tốc độ thực tế còn phụ thuộc số lớp, phép reshape/attention, chứ không chỉ số phép nhân.",
+    "**Tốc độ suy luận (GPU — 1 ảnh (ms)):** CNN tự xây 0.91 ms — MobileViT-XXS 9.66 ms ⇒ CNN tự xây nhanh hơn. Ít FLOPs hơn nhưng không nhanh hơn ⇒ tốc độ thực tế còn phụ thuộc số lớp, phép reshape/attention, chứ không chỉ số phép nhân.",
     "**Thời gian huấn luyện:** CNN tự xây 4.2 s/epoch — MobileViT-XXS 8.2 s/epoch.",
     "**Acc. TB khi ảnh bị biến đổi:** CNN tự xây 84.1% — MobileViT-XXS 70.6% ⇒ CNN tự xây bền hơn.",
     "**Acc. TB khi đổi nền:** CNN tự xây 95.3% — MobileViT-XXS 79.0% ⇒ CNN tự xây bền hơn.",
     "**Biến đổi gây hại nhiều nhất:** CNN tự xây: 'Giảm tương phản' (25.8%); MobileViT-XXS: 'Tối đi 50%' (21.8%).",
     "**Acc. khi chỉ có 2% dữ liệu:** CNN tự xây 96.2% — MobileViT-XXS 95.9% ⇒ tương đương.",
-    "**Ảnh ngoài đời thật:** CNN tự xây 25.0% — MobileViT-XXS 25.0% (trên 24 ảnh — ít ảnh nên chỉ mang tính tham khảo)."
+    "**Ảnh ngoài đời thật:** CNN tự xây 5.7% — MobileViT-XXS 13.8% (trên 87 ảnh — ít ảnh nên chỉ mang tính tham khảo)."
   ]
 }

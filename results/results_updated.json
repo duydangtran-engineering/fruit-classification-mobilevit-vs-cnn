@@ -1,0 +1,125 @@
+{
+ "leakage": {
+  "Val → Train": {
+   "Trung vị khoảng cách (RMS)": 0.02025778777897358,
+   "% ảnh 'gần trùng' (≤ trung vị Val)": 50.0,
+   "% ảnh gần nhất CÙNG LỚP": 100.0
+  },
+  "Test → Train": {
+   "Trung vị khoảng cách (RMS)": 0.0371120348572731,
+   "% ảnh 'gần trùng' (≤ trung vị Val)": 28.0902004454343,
+   "% ảnh gần nhất CÙNG LỚP": 100.0
+  }
+ },
+ "wiki": {
+  "CNN tự xây": {
+   "acc": 0.05747126436781609,
+   "n": 87
+  },
+  "MobileViT-XXS": {
+   "acc": 0.13793103448275862,
+   "n": 87
+  }
+ },
+ "tsne": {
+  "CNN tự xây": {
+   "Ảnh thật cách ảnh Test gần nhất xa gấp (lần)": 23.193039751569618,
+   "Ảnh thật có láng giềng gần nhất CÙNG LỚP (%)": 9.195402298850574,
+   "Accuracy softmax trên ảnh thật (%)": 5.747126436781609
+  },
+  "MobileViT-XXS": {
+   "Ảnh thật cách ảnh Test gần nhất xa gấp (lần)": 17.521620682874293,
+   "Ảnh thật có láng giềng gần nhất CÙNG LỚP (%)": 10.344827586206897,
+   "Accuracy softmax trên ảnh thật (%)": 13.793103448275861
+  }
+ },
+ "seeds_mean": {
+  "CNN tự xây": {
+   "Test sạch": 100.0,
+   "TB 8 phép biến đổi": 84.549,
+   "Nhiễu Gauss (σ=25)": 99.248,
+   "Tối đi 50%": 60.867,
+   "Giảm tương phản": 25.668,
+   "Nền màu ngẫu nhiên": 92.196,
+   "Nền hoa văn ngẫu nhiên": 99.861,
+   "Ảnh thật wiki (87 ảnh)": 6.513
+  },
+  "CNN + GAP": {
+   "Test sạch": 99.935,
+   "TB 8 phép biến đổi": 75.445,
+   "Nhiễu Gauss (σ=25)": 97.847,
+   "Tối đi 50%": 34.438,
+   "Giảm tương phản": 16.769,
+   "Nền màu ngẫu nhiên": 71.771,
+   "Nền hoa văn ngẫu nhiên": 86.591,
+   "Ảnh thật wiki (87 ảnh)": 10.728
+  },
+  "CNN + BN + GAP": {
+   "Test sạch": 100.0,
+   "TB 8 phép biến đổi": 70.913,
+   "Nhiễu Gauss (σ=25)": 54.343,
+   "Tối đi 50%": 26.8,
+   "Giảm tương phản": 21.26,
+   "Nền màu ngẫu nhiên": 77.301,
+   "Nền hoa văn ngẫu nhiên": 89.727,
+   "Ảnh thật wiki (87 ảnh)": 8.046
+  },
+  "MobileViT-XXS": {
+   "Test sạch": 99.981,
+   "TB 8 phép biến đổi": 73.047,
+   "Nhiễu Gauss (σ=25)": 55.828,
+   "Tối đi 50%": 37.769,
+   "Giảm tương phản": 25.111,
+   "Nền màu ngẫu nhiên": 76.411,
+   "Nền hoa văn ngẫu nhiên": 92.131,
+   "Ảnh thật wiki (87 ảnh)": 10.728
+  }
+ },
+ "seeds_std": {
+  "CNN tự xây": {
+   "Test sạch": 0.0,
+   "TB 8 phép biến đổi": 0.457,
+   "Nhiễu Gauss (σ=25)": 0.884,
+   "Tối đi 50%": 1.973,
+   "Giảm tương phản": 0.665,
+   "Nền màu ngẫu nhiên": 1.507,
+   "Nền hoa văn ngẫu nhiên": 0.096,
+   "Ảnh thật wiki (87 ảnh)": 1.327
+  },
+  "CNN + GAP": {
+   "Test sạch": 0.089,
+   "TB 8 phép biến đổi": 2.034,
+   "Nhiễu Gauss (σ=25)": 1.432,
+   "Tối đi 50%": 7.489,
+   "Giảm tương phản": 2.744,
+   "Nền màu ngẫu nhiên": 2.957,
+   "Nền hoa văn ngẫu nhiên": 7.157,
+   "Ảnh thật wiki (87 ảnh)": 1.327
+  },
+  "CNN + BN + GAP": {
+   "Test sạch": 0.0,
+   "TB 8 phép biến đổi": 0.136,
+   "Nhiễu Gauss (σ=25)": 3.159,
+   "Tối đi 50%": 0.722,
+   "Giảm tương phản": 1.431,
+   "Nền màu ngẫu nhiên": 1.67,
+   "Nền hoa văn ngẫu nhiên": 0.945,
+   "Ảnh thật wiki (87 ảnh)": 1.149
+  },
+  "MobileViT-XXS": {
+   "Test sạch": 0.016,
+   "TB 8 phép biến đổi": 1.306,
+   "Nhiễu Gauss (σ=25)": 4.891,
+   "Tối đi 50%": 7.471,
+   "Giảm tương phản": 4.622,
+   "Nền màu ngẫu nhiên": 6.141,
+   "Nền hoa văn ngẫu nhiên": 3.899,
+   "Ảnh thật wiki (87 ảnh)": 3.512
+  }
+ },
+ "seeds": [
+  42,
+  43,
+  44
+ ]
+}
